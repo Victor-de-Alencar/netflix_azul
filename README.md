@@ -1,12 +1,31 @@
-# React + Vite
+# Projeto Final Arquitetura e Tecnologias de Sistemas Web UFRR 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site de streaming feito para a materia de Arquitetura Web. Foi-se usado React + Vite, Firebase, Node.js e axios.
+A API do TMDB foi utilizada para extrair os dados dos filmes e recomendá-los.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como utilizar:
 
-## Expanding the ESLint configuration
+Entre no arquivo e utilize o npm para fazer a instalacao das dependencias:
+```
+  cd Netflix-Azul
+  npm install
+```
+Apos isso, crie um arquivo .env e adicione as chaves da seguinte forma:
+```bash
+VITE_TMDB_API_KEY=CHAVE_TMDB_AQUI
+VITE_FIREBASE_API_KEY=CHAVE_FIREBASE_API
+VITE_FIREBASE_AUTH_DOMAIN=CHAVE_AUTH_DOMAIN
+VITE_FIREBASE_PROJECT_ID=CHAVE_FIREBASE_PROJECT_ID
+VITE_FIREBASE_STORAGE_BUCKET=CHAVE_STORAGE_BUCKET
+VITE_FIREBASE_MESSAGING_SENDER_ID=CHAVE_MESSAGING_SENDER
+VITE_FIREBASE_APP_ID=CHAVE_FIREBASE_APP_ID
+```
+Obs.: o .env deve estar no root do arquivo.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Por fim, execute o seguinte comando:
+
+```bash
+npm run dev
+```
